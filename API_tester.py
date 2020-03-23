@@ -10,6 +10,13 @@ from sub.constant import Constant
 #  & [callback=<имя callback-функции>]
 
 def get_translate(lang_in, lang_out, text):
+	"""
+
+	:param lang_in: the language original
+	:param lang_out: the target language
+	:param text: text on original language
+	:return: the translated text
+	"""
 	r = requests.post(f"{Constant.TRANSLATOR_REFERENCE}",
 	                  data={
 		                  "key": Constant.TRANSLATOR_API_KEY,
@@ -19,6 +26,3 @@ def get_translate(lang_in, lang_out, text):
 		                  "options": '1'
 	                  })
 	return r.json()['text'][0]
-
-
-#print(get_translate(Constant.RUS, Constant.ESP, 'вот это поворот!'))
