@@ -1,7 +1,7 @@
 class Constant:
 	TRANSLATOR_REFERENCE = 'https://translate.yandex.net/api/v1.5/tr.json/translate'
-	TRANSLATOR_API_KEY = 'trnsl.1.1.20200321T130137Z.ef5b35dd74f0ce01.173bcb1f6adb11f7fc34cae5cd75c6ecf2207261'
-	TELEGRAM_API_KEY = '1074335244:AAE4XNOFBYavrLHb8xTR5g57TY_8XAaYjLs'  # @trn2Bot
+	TRANSLATOR_API_KEY = 'trnsl.1.1.20200321T130137Z.ef5b35dd74f0ce01.173bcb1f6adb11f7fc34cae5cd75************'
+	TELEGRAM_API_KEY = '1074335244:AAE4XNOFBYavrLHb8xTR5g5************'  # @trn2Bot
 
 	TITLE_RUS_ENG = 'Перевести на английски'
 	TITLE_RUS_ESP = 'Перевести на испанский'
