@@ -19,7 +19,8 @@ def translate_query(query):
 				input_message_content=telebot.types.InputTextMessageContent(
 					message_text=f'send by {query.from_user.first_name} (@{query.from_user.username})\n' +
 					             API_tester.get_translate(UserOptions.options['message_text'][option][0],
-					                                      UserOptions.options['message_text'][option][1], query.query)))
+					                                      UserOptions.options['message_text'][option][1], query.query) +
+					             f'\n=== === ===\n{query.query}'))
 			)
 
 		bot.answer_inline_query(query.id, proposal, cache_time=10)
